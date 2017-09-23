@@ -76,8 +76,8 @@
         android:text="@string/zero"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp"
-        app:layout_constraintLeft_toLeftOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintLeft_toLeftOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
 
@@ -95,7 +95,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="23dp"
@@ -112,15 +112,15 @@
         tools:layout_constraintTop_creator="1" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/goals"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewGoalTeamOne"
-        app:layout_constraintLeft_toRightOf="@+id/textViewScoreTeamTwo"
-        app:layout_constraintRight_toRightOf="@+id/textViewScoreTeamTwo"
+        app:layout_constraintLeft_toRightOf="@+id/textViewTeamTwoScore"
+        app:layout_constraintRight_toRightOf="@+id/textViewTeamTwoScore"
         app:layout_constraintTop_toTopOf="@+id/textViewGoalTeamOne"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
@@ -135,9 +135,9 @@
         android:layout_marginTop="16dp"
         android:text="@string/team_two"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView13"
-        app:layout_constraintLeft_toRightOf="@+id/textViewScoreTeamTwo"
-        app:layout_constraintRight_toRightOf="@+id/textViewScoreTeamTwo"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintLeft_toRightOf="@+id/textViewTeamTwoScore"
+        app:layout_constraintRight_toRightOf="@+id/textViewTeamTwoScore"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
@@ -145,7 +145,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <TextView
-        android:id="@+id/textViewScoreTeamTwo"
+        android:id="@+id/textViewTeamTwoScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="91dp"
@@ -155,7 +155,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textStyle="bold"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
 
@@ -165,9 +165,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/add_point"
-        app:layout_constraintLeft_toRightOf="@+id/textViewScoreTeamTwo"
-        app:layout_constraintRight_toRightOf="@+id/textViewScoreTeamTwo"
-        app:layout_constraintTop_toBottomOf="@+id/textViewScoreTeamTwo"
+        app:layout_constraintLeft_toRightOf="@+id/textViewTeamTwoScore"
+        app:layout_constraintRight_toRightOf="@+id/textViewTeamTwoScore"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTeamTwoScore"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
@@ -219,7 +219,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <Button
-        android:id="@+id/ButtonReset"
+        android:id="@+id/buttonReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
