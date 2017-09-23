@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.buttonTeamOneAddPoint)
     Button buttonTeamOneAddPoint;
     @BindView(R.id.textViewTeamOneScore)
-    TextView ScoreTeamOne;
+    TextView scoreTeamOne;
     @BindView(R.id.textViewTeamOneFoulNumber)
     TextView textViewTeamOneFoul;
 
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.buttonTeamTwoAddFoul)
     Button buttonTeamTwoAddFoul;
     @BindView(R.id.textViewTeamTwoScore)
-    TextView ScoreTeamTwo;
+    TextView scoreTeamTwo;
     @BindView(R.id.textViewTeamTwoFoulNumber)
     TextView textViewTeamTwoFoul;
 
@@ -63,28 +63,37 @@ public class MainActivity extends AppCompatActivity {
         buttonTeamOneAddFoul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                t1.setFoul(t1.getFoul()+1);
+                int faul=t1.getFoul()+1;
+                t1.setFoul(faul);
+                textViewTeamOneFoul.setText(String.valueOf(faul));
             }
         });
 
         buttonTeamTwoAddFoul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                t2.setFoul(t2.getFoul()+1);
+                int foul=t2.getFoul()+1;
+                t2.setFoul(foul);
+                textViewTeamTwoFoul.setText(String.valueOf(foul));
             }
         });
 
         buttonTeamOneAddPoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                t1.setScore(t1.getScore()+1);
+                int score=t1.getScore()+1;
+                t1.setScore(score);
+                scoreTeamOne.setText(String.valueOf(score));
             }
         });
 
         buttonTeamTwoAddPoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                t2.setScore(t2.getScore()+1);
+               int score=t2.getScore()+1;
+                t2.setScore(score);
+                scoreTeamTwo.setText(String.valueOf(score));
+
             }
         });
     }
