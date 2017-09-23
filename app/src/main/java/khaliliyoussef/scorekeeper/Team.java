@@ -9,7 +9,8 @@ public class Team {
     //    remember all what you have to do just type the field and android studio will handle the rest
     //will generate the constructor getters and setters
 
-    public int number;
+
+
     //the team name
     public String name;
     //the team score
@@ -17,16 +18,14 @@ public class Team {
     //number of fouls
     public int foul;
 
-    public Team(int number, String name, int score, int foul) {
-        this.number = number;
+    public Team( String name, int score, int foul) {
+
         this.name = name;
         this.score = score;
         this.foul = foul;
     }
 
-    public int getNumber() {
-        return number;
-    }
+
 
     public String getName() {
         return name;
@@ -40,9 +39,6 @@ public class Team {
         return foul;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
-    }
 
     public void setName(String name) {
         this.name = name;
