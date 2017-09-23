@@ -51,11 +51,15 @@ public class MainActivity extends AppCompatActivity {
 
                 //team one
                 t1.setFoul(0);
+                textViewTeamOneFoul.setText(String.valueOf(0));
                 t1.setScore(0);
+                scoreTeamOne.setText(String.valueOf(0));
 
                 //team two
                 t2.setFoul(0);
+                textViewTeamTwoFoul.setText(String.valueOf(0));
                 t2.setScore(0);
+                scoreTeamTwo.setText(String.valueOf(0));
 
             }
         });
