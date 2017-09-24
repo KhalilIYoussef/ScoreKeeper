@@ -12,11 +12,11 @@ public class Team {
 
 
     //the team name
-    public String name;
+    private String name;
     //the team score
-    public int score;
+    private int score;
     //number of fouls
-    public int foul;
+    private int foul;
 
     public Team( String name, int score, int foul) {
 
